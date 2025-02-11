@@ -1,0 +1,6 @@
+{
+    "channel": "alerts",
+    "port": 6379,
+    "password": "",
+    "host": "localhost"
+}
