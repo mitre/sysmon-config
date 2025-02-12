@@ -114,7 +114,7 @@ If we wanted to map the ILF event name of event id `1`, `ProcessCreate` to `Crea
 
 ### Configuration Files Output Example
 
-Here is an example output when using the configurations from the 3 configuration files listed above with the [sysmon_to_ilf logstash translator](https://gitlab.mitre.org/seal/translators/sysmon_to_ilf).
+Here is an example output when using the configurations from the 3 configuration files listed above with the sysmon_to_ilf logstash translator.
 
 #### Input
 
@@ -196,8 +196,6 @@ EventId,SysmonFieldName,ECSFieldName,IsAllowed
 ```
 
 The two currently supported multivalue mappings are for `User` and `Hashes`. Additional multivalue mappings will need to be programmed as special cases into all translators that use the configuration files.
-
-For details on how the filtering of multivalue fields works in the sysmon_to_ilf logstash translator, see the [ruby filter](https://gitlab.mitre.org/seal/translators/sysmon_to_ilf/-/blob/main/Developer.md?ref_type=heads#multi-value-field-mapping).
 
 #### Script
 
